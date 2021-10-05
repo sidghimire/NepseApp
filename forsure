@@ -1,0 +1,55 @@
+from flask import Flask
+from flask_restful import Api,Resource
+from flask_cors import CORS,cross_origin
+import json
+from bs4 import BeautifulSoup
+import requests
+
+
+totalList={}
+def fetch():
+    html_text=requests.get('https://merolagani.com/LatestMarket.aspx').text
+    soup=BeautifulSoup(html_text,'lxml')
+    table=soup.find("table",class_="table table-hover live-trading sortable")
+    tbody=table.find("tbody")
+    tr=tbody.find_all("tr")
+    company={}
+    i=0
+    k=0
+    title=['id','LTP','percent','high','low','open','qty']
+    for tr in tr:
+        td=tr.find_all("td")
+        company={}
+        k=0
+        j=0
+        for td in td:
+            company[title[k]]=td.text
+            if(j==6):
+                break
+            j=j+1
+            k=k+1
+        
+        totalList[i]=company
+        i=i+1
+    
+
+app=Flask(__name__)
+api=Api(app)
+CORS(app, support_credentials=True)
+count=0
+
+
+class GetNepseData(Resource):
+    
+    def get(self):
+        fetch()
+        return totalList
+
+
+api.add_resource(GetNepseData,"/getnepse")
+from flask_ngrok import run_with_ngrok
+run_with_ngrok(app)
+
+
+if __name__=="__main__":
+    app.run()

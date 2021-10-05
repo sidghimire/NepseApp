@@ -1,0 +1,75 @@
+<SafeAreaView style={{height:300}}>
+                
+                <ScrollView  style={{flex:1,paddingTop:15}}>
+                    <View style={styles.shareInfoContainer}>
+                        <View style={styles.smallDiv1}>
+                            <Text style={[styles.shareText2,{fontWeight:'bold'}]}>CHCL</Text>
+                        </View>
+                        <View style={styles.smallDiv1}>
+                            <Text style={styles.shareText2}>740</Text>
+                        </View>
+                        <View style={styles.smallDiv1}>
+                            <Text style={styles.shareText2}>610</Text>
+                        </View>
+                        <View style={styles.smallDiv1}>
+                            <Text style={styles.shareText2}>210</Text>
+                        </View>
+                        <View style={styles.smallDiv1}>
+                            <Text style={styles.shareText2}>140000</Text>
+                        </View>
+                    </View>
+                    <View style={styles.shareInfoContainer2}>
+                        <View style={styles.smallDiv1}>
+                            <Text style={[styles.shareText1,{fontWeight:'bold'}]}>CHCL</Text>
+                        </View>
+                        <View style={styles.smallDiv1}>
+                            <Text style={styles.shareText1}>740</Text>
+                        </View>
+                        <View style={styles.smallDiv1}>
+                            <Text style={styles.shareText1}>610</Text>
+                        </View>
+                        <View style={styles.smallDiv1}>
+                            <Text style={styles.shareText1}>210</Text>
+                        </View>
+                        <View style={styles.smallDiv1}>
+                            <Text style={styles.shareText1}>140000</Text>
+                        </View>
+                    </View>
+                    <View style={styles.shareInfoContainer}>
+                        <View style={styles.smallDiv1}>
+                            <Text style={[styles.shareText2,{fontWeight:'bold'}]}>CHCL</Text>
+                        </View>
+                        <View style={styles.smallDiv1}>
+                            <Text style={styles.shareText2}>740</Text>
+                        </View>
+                        <View style={styles.smallDiv1}>
+                            <Text style={styles.shareText2}>610</Text>
+                        </View>
+                        <View style={styles.smallDiv1}>
+                            <Text style={styles.shareText2}>210</Text>
+                        </View>
+                        <View style={styles.smallDiv1}>
+                            <Text style={styles.shareText2}>140000</Text>
+                        </View>
+                    </View>
+                    <View style={styles.shareInfoContainer2}>
+                        <View style={styles.smallDiv1}>
+                            <Text style={[styles.shareText1,{fontWeight:'bold'}]}>CHCL</Text>
+                        </View>
+                        <View style={styles.smallDiv1}>
+                            <Text style={styles.shareText1}>740</Text>
+                        </View>
+                        <View style={styles.smallDiv1}>
+                            <Text style={styles.shareText1}>610</Text>
+                        </View>
+                        <View style={styles.smallDiv1}>
+                            <Text style={styles.shareText1}>210</Text>
+                        </View>
+                        <View style={styles.smallDiv1}>
+                            <Text style={styles.shareText1}>140000</Text>
+                        </View>
+                    </View>
+                </ScrollView>
+            </SafeAreaView>
+
+            00501030255547
